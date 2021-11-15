@@ -32,12 +32,12 @@ conda create --name obj_det python=3.8.5
 - Activate your enviroment `conda activate obj_det`
 - Install dependencies following this commands
  
-```
-pip install torch==1.8.2+cu101 torchvision==0.9.2+cu101 torchaudio===0.8.2 -f https://download.pytorch.org/whl/lts/1.8/torch_lts.html
-pip install PyQt5 vtk tqdm matplotlib==3.3.3 easydict==1.9 tensorboard
-pip install mayavi
-conda install scikit-image shapely
-conda install -c conda-forge opencv
+```shell script
+   conda install pytorch torchvision torchaudio cudatoolkit=11.1 -c pytorch -c conda-forge
+   pip install PyQt5 vtk tqdm matplotlib==3.3.3 easydict==1.9 tensorboard
+   pip install mayavi
+   conda install scikit-image shapely
+   conda install -c conda-forge opencv
 ```
 	
 - Then Navigate to `Models/AnyNet/models/spn_t1` to activate SPN layer.
